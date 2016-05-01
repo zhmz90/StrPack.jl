@@ -1,6 +1,8 @@
 StrPack: Structured Binary Stream Tools
 =======================================
 
+[![Build Status](https://travis-ci.org/zhmz90/StrPack.jl.svg?branch=master)](https://travis-ci.org/zhmz90/StrPack.jl)
+
 One of the things I find annoying about MATLAB is dealing with binary data. There's a lot of boilerplate, a lot of `fread()`, and some weird thing involving a `=>`.
 
 Enter StrPack. StrPack decodes binary streams to Julia composite types, handling stream endianness and padding bytes for the source ABI along the way. StrPack also encodes instances of Julia composite types to binary streams, setting endianness and adding padding if required to meet an ABI. Along with Julia's `IOBuffer` type, StrPack can also be used to convert between Julia composite types and buffers suitable for some C function arguments.
